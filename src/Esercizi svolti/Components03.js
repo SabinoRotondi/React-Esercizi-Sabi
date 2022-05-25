@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HelloSciuti from "./Components - 03"
+import HelloSciuti from "./Components03"
 
 class AppSciuti extends Component {
   render() {
