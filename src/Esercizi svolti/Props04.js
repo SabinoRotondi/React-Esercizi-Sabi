@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Welcome extends Component {
+class WelcomeStrong extends Component {
   render() {
     return (
       <p>Welcome, {this.props.name}!</p>
@@ -8,4 +8,4 @@ class Welcome extends Component {
   }
 }
 
-export default Welcome
+export default WelcomeStrong
