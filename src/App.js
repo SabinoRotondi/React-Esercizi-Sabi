@@ -13,12 +13,13 @@
 //import WelcomeFifth from './Esercizi svolti/Conditional Rendering03'
 //import WelcomeSixth from './Esercizi svolti/Conditional Rendering04'
 //import WelcomeSeventh from './Esercizi svolti/Conditional Rendering05'
-import Counter from "./Esercizi svolti/State01";
+//import Counter from "./Esercizi svolti/State01";
+import CounterSec from "./Esercizi svolti/State03";
 
 function App() {
   return (
     <div className="App">
-     <Counter />
+     <CounterSec />
     </div>
   );
 }
