@@ -10,13 +10,14 @@
 //import Age from './Esercizi svolti/Props05'
 //import WelcomeThird from './Esercizi svolti/Conditional Rendering01'
 //import WelcomeFourth from './Esercizi svolti/Conditional Rendering02'
-import WelcomeFifth from './Esercizi svolti/Conditional Rendering03';
-import WelcomeSixth from './Esercizi svolti/Conditional Rendering04'
+//import WelcomeFifth from './Esercizi svolti/Conditional Rendering03';
+//import WelcomeSixth from './Esercizi svolti/Conditional Rendering04'
+import WelcomeSeventh from './Esercizi svolti/Conditional Rendering05'
 
 function App() {
   return (
     <div className="App">
-      <WelcomeSixth age={64} name="John"/>
+      <WelcomeSeventh age ={15}/>
     </div>
   );
 }
