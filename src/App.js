@@ -8,13 +8,14 @@
 //import WelcomeSec from './Esercizi svolti/Props03'
 //import WelcomeStrong from './Esercizi svolti/Props04'
 //import Age from './Esercizi svolti/Props05'
-//import WelcomeThird from './Esercizi svolti/Conditional Rendering01';
-import WelcomeFourth from './Esercizi svolti/Conditional Rendering02';
+//import WelcomeThird from './Esercizi svolti/Conditional Rendering01'
+import WelcomeFourth from './Esercizi svolti/Conditional Rendering02'
+import WelcomeFifth from './Esercizi svolti/Conditional Rendering03';
 
 function App() {
   return (
     <div className="App">
-      <WelcomeFourth age={22}/>
+      <WelcomeFifth age={64}/>
     </div>
   );
 }
