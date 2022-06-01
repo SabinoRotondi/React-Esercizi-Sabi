@@ -16,12 +16,13 @@
 //import Counter from "./Esercizi svolti/State01";
 //import CounterSec from "./Esercizi svolti/State03";
 //import CounterThird from './Esercizi svolti/State04'
-import CounterFourth from './Esercizi svolti/Component Lifecycle01';
+//import CounterFourth from './Esercizi svolti/Component Lifecycle01';
+import ButtonTest from "./Esercizi svolti/Events01";
 
 function App() {
   return (
     <div className="App">
-     <CounterFourth />
+     <ButtonTest />
     </div>
   );
 }
