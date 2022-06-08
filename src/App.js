@@ -12,7 +12,7 @@ import Age from './Esercizi svolti/Props05'
 function App() {
   return (
     <div className="App">
-      <Age age={22}/>    
+      <Age age={22} />    
     </div>
   );
 }
