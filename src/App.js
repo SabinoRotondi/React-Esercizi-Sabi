@@ -1,11 +1,10 @@
-import Container from "./Esercizi svolti/Composition01";
-import ContainerSec from "./Esercizi svolti/Composition02";
+import React from "react";
+import ContextOne from "./Esercizi svolti/Contexts";
 
 function App() {
   return (
     <div className="App">
-      <Container />
-      <ContainerSec title='Composition2' />
+      <ContextOne />
     </div>
   );
 }
