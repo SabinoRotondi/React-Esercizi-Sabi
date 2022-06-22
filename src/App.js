@@ -1,10 +1,11 @@
-import React from "react";
-import ContextOne from "./Esercizi svolti/Contexts";
+import Welcome from "./Esercizi svolti/Function01";
+import Sum from "./Esercizi svolti/Function02";
 
 function App() {
   return (
     <div className="App">
-      <ContextOne />
+      <Welcome name='Sabi' />
+      <Sum />
     </div>
   );
 }
