@@ -1,11 +1,11 @@
-import Welcome from "./Esercizi svolti/Function01";
-import Sum from "./Esercizi svolti/Function02";
+import ClickCounter from "./Esercizi svolti/useState01";
+import Login from "./Esercizi svolti/useState02";
 
 function App() {
   return (
     <div className="App">
-      <Welcome name='Sabi' />
-      <Sum />
+      <ClickCounter />
+      <Login />
     </div>
   );
 }
