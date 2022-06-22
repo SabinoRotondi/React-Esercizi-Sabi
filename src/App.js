@@ -1,13 +1,11 @@
-import Welcome from "./Esercizi svolti/Styling01";
-import Login from "./Esercizi svolti/Styling03";
+import Container from "./Esercizi svolti/Composition01";
+import ContainerSec from "./Esercizi svolti/Composition02";
 
 function App() {
   return (
     <div className="App">
-      <div className="welcome">
-        <Welcome name='Sabi' />
-        <Login />
-      </div>
+      <Container />
+      <ContainerSec title='Composition2' />
     </div>
   );
 }

@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.welcome {
-  background-color: cyan;
-  border: 2px solid blue;
+.container {
+  background-color: white;
+  border: 2px solid red;
 }
