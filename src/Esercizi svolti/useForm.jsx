@@ -1,17 +1,32 @@
-export const useForm = () => {
-    const [form, setForm] = {
-        username: '',
-        password: '',
-    };
+import { useState } from 'react'
 
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setForm(prevState => {
-            return { ...prevState, [name]: value, }
+export function useForm() {
+    const [info, setInfo] = useState({
+        name: '',
+        password: '',
+        remember: false,
+    });
+
+    const handleChange = (e) => {
+        const { name, value, checked, type } = e.target;
+
+        setInfo((info) => {
+            return {
+                ...info,
+                [name]: type === 'checkbox' ? checked : value,
+            };
         });
     };
-    return {
-        form,
-        onInputChange: handleInputChange,
+
+    const handleLogin = (e) => {
+        e.preventDefault()
+        console.log(info);
     };
-};
+    return {
+        name: info.name,
+        password: info.password,
+        remember: info.remember,
+        onChange: handleChange,
+        onLogin: handleLogin
+    }
+}
