@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class TodoList extends Component {
 
     state = {
-        todo: []
+        todo: ['listtest', 'mangiare']
     };
 
     saveInput = (e) => {
@@ -17,7 +17,21 @@ class TodoList extends Component {
         e.target.elements.input.value = '';
         todo.push(input)
         console.log(todo)
-        }
+    }
+
+    onReset = (e) => {
+        e.preventDefault();
+        this.setState({
+            todo: []
+        })
+
+    }
+
+    onRemove = (e) => {
+        let newTodo = [...this.state.todo];
+        newTodo.splice(e, 1)
+        this.setState({ todo: newTodo })
+    }
 
     render() {
         return (
@@ -25,12 +39,11 @@ class TodoList extends Component {
                 <form onSubmit={this.newTodo}>
                     <input name='input' onChange={this.saveInput} />
                     <button type='submit'>Add Todo </button>
+                    <button onClick={this.onReset}>Reset</button>
                 </form>
-                <ul>
-                    {this.state.todo.map((item, i) => {
-                        return <li key={i}> {item}</li>
-                    })}
-                </ul>
+                <div>
+                    {this.props.render(this.state.todo)}
+                </div>
             </>
 
         )
