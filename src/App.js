@@ -1,17 +1,10 @@
 import React from "react";
-import GithubUser2 from "./Esercizi svolti/GithhubUser2";
-import GithubUser from "./Esercizi svolti/GithubUser";
-import { Counter } from "./Esercizi svolti/Counter";
-import {Form }from "./Esercizi svolti/Form";
-
+import { CarDetails } from './Esercizi svolti/CarDetails';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
-      <Form />
-      <GithubUser username='SabinoRotondi' />
-      <GithubUser2 username='SabinoRotondi' />
+      <CarDetails initialData={{ model: 'Ford Mustang', color: 'Red', year: 2012, cc: 5000 }} />
     </div>
   );
 }
