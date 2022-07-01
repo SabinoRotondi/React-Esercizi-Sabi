@@ -1,9 +1,10 @@
 import React from "react";
-import Context from "./Esercizi svolti/Context";
+import { Counter } from "./Esercizi svolti/Counter";
+
 function App() {
   return (
     <div className="App">
-      <Context />
+      <Counter />
     </div>
   );
 }
